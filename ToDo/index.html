@@ -17,11 +17,18 @@
           id="todoInput"
           placeholder="Add a new todo"
         />
-        <button class="btn">Add</button>
+        <button class="btn" id="priorityBtn">
+          <form id="task-form">
+            <select id="task-priority">
+              <option value="high">Hoch</option>
+              <option value="medium">Mittel</option>
+              <option value="low">Niedrig</option>
+            </select>
+          </form>
+        </button>
+        <button class="btn" id="addButton">Add</button>
       </div>
-      <ul class="scroll">
-        <li id="todoList"></li>
-      </ul>
+      <ul class="scroll" id="todoList"></ul>
       <div>
         <hr class="counter" />
         <div class="counter-container">
